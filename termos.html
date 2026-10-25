@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #2d3748;
+      background-color: #f7fafc;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    h1, h2, h3 { color: #1a202c; margin-top: 1.5em; }
+    h1 { border-bottom: 2px solid #edf2f7; padding-bottom: 12px; margin-top: 0; }
+    code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 24px; }
+    blockquote { border-left: 4px solid #cbd5e0; margin: 0; padding-left: 16px; color: #718096; }
+  </style>
+</head>
+<body>
+  <div class="container" id="content"></div>
+
+  <!-- Biblioteca para renderizar Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- EDITAR APENAS O TEXTO MARKDOWN ABAIXO -->
+  <script type="text/markdown" id="markdown-source">
+# Termos de Uso
+
+*Última atualização: Outubro de 2026*
+
+Ao utilizar o aplicativo **Tachys - oficina e escrita**, você concorda com estes Termos de Uso. Leia atenciosamente antes de utilizar a ferramenta.
+
+---
+
+### 1. Descrição do Serviço
+O **Tachys - oficina e escrita** é um aplicativo de bloco de notas pessoal com armazenamento local. O aplicativo inclui uma funcionalidade opcional de Inteligência Artificial para análise de textos e geração automática de missões (tarefas).
+Inicialmente o usuário poderá usar somente algumas funcionalidades do app, mas conforme escreve e cumpre metas e missões, ganhará pontos de experiência necessários para subir de nível e desbloquear novas funcionalidades.
+
+### 2. Uso de Chave Própria de API (BYOK)
+- Para utilizar a funcionalidade de Inteligência Artificial, o usuário deve fornecer sua própria chave de API da plataforma **Google Gemini**.
+-  O usuário é o único e exclusivo responsável pela obtenção, manutenção, limites de cota e eventuais custos associados à sua chave de API junto ao Google.
+-  O aplicativo não se responsabiliza por bloqueios, falhas de conexão ou interrupções impostas pelo provedor da API.
+
+### 3. Isenção de Responsabilidade sobre Resultados da IA
+- As avaliações e missões geradas pela Inteligência Artificial são meras sugestões automatizadas baseadas em modelos probabilísticos de linguagem.
+- Não garanto a precisão, utilidade, veracidade ou adequação das sugestões geradas pela IA, inclusive para marcar missões como concluídas.
+
+### 4. Faixa etária
+O aplicativo Tachys - Oficina de escrita é destinado a usuários com no mínimo 13 anos de idade. O uso de funcionalidades de Inteligência Artificial exige o fornecimento de uma chave de API própria, cuja obtenção está sujeita aos termos e limites de idade estabelecidos pelo provedor do serviço (Google Gemini).
+
+### 5. Propriedade Intelectual
+- Todo o conteúdo criado e digitado nas anotações pertence exclusivamente ao usuário.
+- O código-fonte, design, interface e marcas associadas ao **Tachys - oficina e escrita** pertencem ao desenvolvedor.
+
+### 6. Alterações nestes Termos
+Reservo o direito de atualizar estes Termos de Uso a qualquer momento. Alterações significativas serão refletidas nesta página.
+
+### 7. Monetização e Custos de Uso
+Esta versão do aplicativo é gratuita, e todas as funcionalidades podem ser desbloqueadas sem qualquer pagamento ao aplicativo ou ao desenvolvedor.
+
+A única funcionalidade que poderá gerar custos externos é “**Avaliar Capítulo**”, quando utilizada com uma chave de API cuja conta esteja configurada para faturamento no Google AI Studio ou no serviço correspondente do Google. Nessa situação, as chamadas à API poderão gerar cobranças conforme as políticas de preços e faturamento do provedor.
+
+O aplicativo não cobra assinaturas ou taxas pelo uso dessa funcionalidade, e o desenvolvedor não recebe valores decorrentes das chamadas à API realizadas pelo usuário.
+
+O usuário é responsável por verificar as configurações de faturamento, os limites de utilização e as eventuais cobranças aplicáveis à sua conta junto ao provedor da API.
+---
+### 8. Contato
+Caso tenha dúvidas sobre estes Termos de Uso, entre em contato pelo e-mail: **exosoul.artist@gmail.com**.
+  </script>
+
+  <script>
+    document.getElementById('content').innerHTML = marked.parse(document.getElementById('markdown-source').textContent);
+  </script>
+</body>
+</html>
